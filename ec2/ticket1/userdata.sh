@@ -1,2 +1,4 @@
 #!/bin/bash
-# Your code goes here
+sudo yum install httpd
+sudo systemctl start httpd
+sudo systemctl enable httpd

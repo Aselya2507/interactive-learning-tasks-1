@@ -1,7 +1,7 @@
 resource "aws_route53_record" "wordpress" {
-  zone_id = # Your code goes here
-  name    = # Your code goes here
+  zone_id = "YOUR_ZONE_ID"
+  name    = "wordpress.YOUR_ACC_NAME.com"
   type    = "A"
   ttl     = "300"
-  records = [# Your code goes here]
+  records = [aws_instance.web.public_ip]
 }
